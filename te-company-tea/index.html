@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Te Company Tea</title>
     <script src="https://kit.fontawesome.com/0ce8e5c501.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,17 +19,19 @@
         <p>Free US shipping on orders $100+</p>
     </div>
     <header>
-        <a href="#" class="logo"><img src="./images/te-company-text-logo.webp" alt="logo-image"></a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Tea</a></li>
-                <li><a href="#">Snacks</a></li>
-                <li><a href="#">Gifts</a></li>
-                <li><a href="#">Subscriptions</a></li>
-                <li><a href="#">Experiences</a></li>
-                <li><a href="#">Learn</a></li>
-            </ul>
-        </nav>
+        <div class="logo-and-nav-container">
+            <a href="#" class="logo"><img src="./images/te-company-text-logo.webp" alt="logo-image"></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Tea</a></li>
+                    <li><a href="#">Snacks</a></li>
+                    <li><a href="#">Gifts</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Learn</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="icon-links">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -37,15 +43,19 @@
                     src="./images/citrus-party-banner-desktop--feature-img-width-1500.webp"
                     alt="banner image with citrus fruit" width="900"></a></div>
         <div class="info-container">
-            <h2>Springtime Citrus</h2>
-            <p>Let in the sunshine with a citrus party, including the sweet and tangy golden kumquats.</p>
-            <a href="#" class="btn">Shop Citrus</a>
+            <div class="info">
+                <h2>Springtime Citrus</h2>
+                <p>Let in the sunshine with a citrus party, including the sweet and tangy golden kumquats.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn">Shop Citrus</a>
+            </div>
         </div>
     </div>
     <div class="tea-types-container">
         <div class="tea-article-container">
             <div class="img-container"><a href="#"><img src="./images/vintage-tea-img.webp"
-                        alt="two cups of tea on a wooden tray" width="650"></a></div>
+                        alt="two cups of tea on a wooden tray" width="580"></a></div>
             <a href="#">
                 <h4>Exploring Vintage Tea</h4>
             </a>
@@ -54,7 +64,7 @@
         </div>
         <div class="tea-article-container">
             <div class="img-container"><a href="#"><img src="./images/sachet-sleeves-tea-img.jpg"
-                        alt="sachet sleeves tea" width="650"></a></div>
+                        alt="sachet sleeves tea" width="580"></a></div>
             <a href="#">
                 <h4>Té Sachet Sleeves</h4>
             </a>
