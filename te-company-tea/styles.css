@@ -379,3 +379,72 @@ footer {
     padding: 5rem 10rem 3rem 10rem;
     background-color: var(--light-brown);
 }
+
+footer>div {
+    display: flex; 
+    padding-bottom: 5em; 
+    gap: 5em;
+}
+
+footer div.about-footer-container>div {
+    display: flex; 
+    margin-bottom: 1em;
+}
+
+footer div.about-footer-container>div>h3 {
+    font-weight: normal;
+    font-size: 1.7em; 
+    margin-left: 0.8em;
+}
+
+footer div.about-footer-container>p {
+    font-size: 1.05em;
+    margin-bottom: 1em;
+}
+
+footer div.about-footer-container label {
+    display: none;
+}
+
+footer div.about-footer-container input {
+    border: none;
+    padding: 0.3em 1em;
+} 
+
+footer div.about-footer-container input::placeholder {
+    color: black;
+    font-style: italic; 
+    font-size: 1.1em;
+}
+ 
+footer div.footer-nav ul.footer-nav-links {
+    display: flex;
+    gap: 8em;
+    justify-content: space-between;
+}
+
+footer div.footer-nav ul.footer-nav-links h4 {
+    font-weight: normal;
+    font-size: 1.4em; 
+    margin-bottom: 1em;
+}
+
+footer div.footer-nav ul.footer-nav-links>li>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div.footer-nav ul.footer-nav-links>li>ul>li {
+    font-size: 1.1em;
+    padding-bottom: 0.5em; 
+}
+
+footer>p {
+    font-size: 0.65em;
+    opacity: 0.6;
+}
+
+footer>p>a:hover {
+    color: black;
+    opacity: 1;
+}
