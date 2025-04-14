@@ -145,6 +145,16 @@ div.feature-container .img-container {
     /* width: 860px; */
     /* height: 580px; */
     overflow: hidden;
+    position: relative;
+    /* min-width: fit-content; */
+}
+
+div.feature-container .img-container img.red-stamp {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    right: 25px; 
+    max-width: 45px;
 }
 
 div.feature-container h2 {
@@ -295,9 +305,24 @@ div.best-sellers-container div.items-container p.price {
 
 
 /*  */
+div.perfect-tea-quiz-wrapper {
+    position: relative;
+    max-width: 80%;
+    border-top: 1px solid var(--greenish-border-color);
+    margin: 1em auto; 
+    padding-top: 4.5em;
+    margin-top: 5em;
+}
+
+div.perfect-tea-quiz-wrapper img.fancy-ornament {
+    position: absolute;
+    top: -32.5px;
+    left: 45%;
+}
+
 div.perfect-tea-quiz {
     text-align: center;
-    max-width: 45%;
+    max-width: 55%;
     margin: 1em auto; 
 }
 
@@ -378,6 +403,13 @@ div.tea-brewing-container div.items-container p {
 footer {
     padding: 5rem 10rem 3rem 10rem;
     background-color: var(--light-brown);
+    position: relative;
+}
+
+footer img.red-stamp {
+    position: absolute;
+    right: 7.8em;
+    top: -2em;
 }
 
 footer div.upper-footer-container {
