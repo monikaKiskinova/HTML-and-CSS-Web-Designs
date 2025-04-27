@@ -223,12 +223,55 @@ div.tea-article-container p {
 
 /* about-container styles */
 div.about-container {
-    border: 2px solid var(--light-border-color);
     max-width: 48%;
     margin: 3.5em auto;
     text-align: center;
-    padding: 3.5em;
-    /* border-image: url(images/fancy-corner.svg) 30; */
+    padding: 4em 2em;
+    /* border: 65px solid transparent; */
+    /* border-image: url(images/fancy-corner.svg); */
+    /* border-image-slice: 100; */
+    /* border-image-repeat: round; */
+    position: relative;
+}
+
+div.about-container div.corner {
+    max-width: 65px;
+    width: 65px;
+    max-height: 65px;
+    height: 65px;
+    background-image: url(images/fancy-corner.svg); 
+    position: absolute;
+    display: block;
+}
+
+div.about-container div.corner.top-left {
+    top: 0;
+    left: 0;
+}
+
+div.about-container div.corner.top-right {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+div.about-container div.corner.bottom-left {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+}
+
+div.about-container div.corner.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+div.about-container img.red-stamp-square {
+    position: absolute;
+    left: 5em;
+    bottom: -1.5em;
 }
 
 div.about-container h3 {
