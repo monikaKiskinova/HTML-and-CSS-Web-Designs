@@ -1,0 +1,110 @@
+@import url(reset.css);
+
+:root {
+    --background-color: #ffffff;
+    --yellow: #ffcc00;
+    --grey: #959595;
+}
+
+
+
+
+
+/* header */
+header div.header {
+    display: flex;
+    justify-content: space-between; 
+    padding: 1.5em 3em 1em 3em;
+}
+
+header div.header button {
+    background: transparent;
+    border: none;
+}
+
+header div.contact-and-search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header div.contact-and-search-container div {
+    display: flex;
+    justify-content: end;
+    gap: 1.2em;
+}
+
+header div.contact-and-search-container div p {
+    font-size: 0.8em;
+}
+
+header div.contact-and-search-container div p.tel {
+    font-weight: bold;
+    padding-bottom: 0.2em;
+}
+
+header div.contact-and-search-container div p.tel a.tel {
+    padding-top: 0.2em;
+    border-bottom: 2px solid var(--yellow);
+
+    background: linear-gradient(#ffffff, #ffffff 50%, var(--yellow) 50%, var(--yellow));
+    background-size: 100% 200%;
+    transition: background .2s;
+}
+
+header div.contact-and-search-container div p.tel a.tel:hover {
+    background-position: 100% 100%;
+}
+
+header div.contact-and-search-container div p.working-hours {
+    opacity: 0.6;
+}
+
+header div.contact-and-search-container div.search-and-reserve-container form {
+    position: relative;
+}
+
+header div.contact-and-search-container div.search-and-reserve-container form label {
+    opacity: 0.6;
+    font-size: 0.9em; 
+    position: absolute; 
+    top: 25%;
+    left: 8%;
+}
+
+header div.contact-and-search-container div.search-and-reserve-container form input {
+    width: 175px;
+    padding: 0.55em;
+    border: 1px solid var(--grey);
+}
+
+header div.contact-and-search-container div.search-and-reserve-container form button {
+    opacity: 0.7;
+    position: absolute; 
+    top: 6%;
+    right: 6%; 
+}
+
+header div.contact-and-search-container div.search-and-reserve-container a.btn.reserve-online-btn {
+    width: 210px;
+    display: block;
+    /* padding-left: 0.5em 4em 0.8em 6em; */
+    padding: 0.3em 3.5em 0.4em 6em; 
+    text-align: right;
+}
+
+
+
+header nav {
+    background: #000;
+    color: var(--background-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8em; 
+    padding: 1.5em 3em;
+}
+
+header nav ul {
+    display: flex; 
+    justify-content: space-between;
+}
