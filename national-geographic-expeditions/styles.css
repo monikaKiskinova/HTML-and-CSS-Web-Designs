@@ -108,3 +108,96 @@ header nav ul {
     display: flex; 
     justify-content: space-between;
 }
+
+
+
+
+/* feature-container styles */
+div.feature-container {
+    background-image: url(images/feature-image-homepage-waterfall.jpg);
+    background-position: center;
+    background-size: contain;
+    color: var(--background-color);
+    text-align: center;
+}
+
+div.feature-container h1, 
+div.feature-container p { 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+div.feature-container div.feature-header {
+    padding: 8vw 12vw;
+    padding-bottom: 13.5vw;
+}
+div.feature-container div.feature-header h1 {
+    text-transform: uppercase;
+    font-size: 2.8em;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    margin-bottom: 0.2em;
+}
+
+div.feature-container p {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+div.feature-container div.feature-header p i {
+    text-shadow: none;
+    padding-left: 0.4em;
+    font-size: 0.9em;
+}
+
+div.feature-container div.find-your-next-trip-container form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 0.6vw;
+    padding-bottom: 6vw;
+}
+
+div.feature-container div.find-your-next-trip-container form div.field {
+    position: relative;
+}
+
+div.feature-container div.find-your-next-trip-container form label {
+    display: none;
+}
+
+div.feature-container div.find-your-next-trip-container form select {
+    border: none;
+    font-size: 1em;
+    padding: 0.8em 1.5em;
+    appearance: none;
+}
+
+div.feature-container div.find-your-next-trip-container form select[name="trip-type"], 
+div.feature-container div.find-your-next-trip-container form select[name="departure-month"] {
+    margin-left: 45px;
+}
+
+div.feature-container div.find-your-next-trip-container form select:focus {
+    outline: none;
+}
+
+div.feature-container div.find-your-next-trip-container form div.field:after {
+    content: url(images/chevron-down-solid.svg);
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    padding: 0.8em;
+    background-color: var(--yellow);
+    color: black;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 1;
+}
+
+div.feature-container div.find-your-next-trip-container form button.btn {
+    margin-left: 58px;
+    display: inline-block;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+}

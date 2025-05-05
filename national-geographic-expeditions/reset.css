@@ -59,7 +59,8 @@ a {
     color: inherit;
 }
 
-a.btn {
+/* a.btn, */
+.btn {
     /* background-color: var(--yellow); */
     background-color: #ffcc00;
     color: black;
@@ -69,4 +70,5 @@ a.btn {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
+    border: none;
 }
