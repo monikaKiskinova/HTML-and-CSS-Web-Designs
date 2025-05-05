@@ -1,5 +1,3 @@
-/* @import url(responsive.css); */
-
 :root {
     --background-color: #fefefc;
     --brown: #886f60;
@@ -20,7 +18,6 @@
 
 /* typography */
 html {
-    /* font: 16px/1.5 'Times New Roman', Times, serif; */
     /* font: 16px/1.5 'EBGaramond', serif; */
     font-size: clamp(12px, 3vw, 16px);
     font-family: 'EBGaramond', serif;
@@ -81,7 +78,6 @@ img {
     align-items: center;
 }
 
-/* ul>li>a { */
 a {
     text-decoration: none;
     color: inherit;
@@ -161,7 +157,6 @@ div.feature-container {
     padding: 1.5vw 8vw;
     display: flex;
     gap: 3em;
-    /* justify-content: space-between; */
 }
 
 div.feature-container .img-container {
@@ -171,7 +166,6 @@ div.feature-container .img-container {
     /* height: 580px; */
     overflow: hidden;
     position: relative;
-    /* min-width: fit-content; */
 }
 
 div.feature-container .img-container img.red-stamp {
@@ -194,15 +188,6 @@ div.feature-container p {
     max-width: 45ch;
     opacity: 0.8;
 }
-
-/* div.feature-container a.btn {
-    background-color: var(--brown);
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 0.6em 4em;
-    border-radius: 0.3em;
-} */
 
 div.feature-container div.info-container {
     display: flex;
@@ -256,10 +241,6 @@ div.about-container {
     margin: 3.5em auto;
     text-align: center;
     padding: 4em 2em;
-    /* border: 65px solid transparent; */
-    /* border-image: url(images/fancy-corner.svg); */
-    /* border-image-slice: 100; */
-    /* border-image-repeat: round; */
     position: relative;
 }
 
@@ -285,7 +266,6 @@ div.about-container div.corner.top-right {
 }
 
 div.about-container div.corner.bottom-left {
-    /* position: absolute; */
     bottom: 0;
     left: 0;
     transform: rotate(270deg);
@@ -342,7 +322,6 @@ div.best-sellers-container ul {
 }
 
 div.best-sellers-container ul li.active {
-    /* border-bottom: 1px solid var(--greenish-border-color); */
     border-bottom: 1px solid var(--brown);
 }
 
@@ -350,13 +329,11 @@ div.best-sellers-container div.items-container {
     display: flex;
     gap: 1.8em;
     text-align: center;
-    /* flex-wrap: wrap;  */
     justify-content: center;
 }
 
 div.best-sellers-container div.item {
     max-width: 240px;
-    /* flex-basis: 240px; */
 }
 
 div.best-sellers-container div.items-container div.img-container {
@@ -423,7 +400,6 @@ div.perfect-tea-quiz {
 
 div.perfect-tea-quiz div.images-container {
     display: flex;
-    /* justify-content: space-around; */
     justify-content: center;
     gap: 2.5em;
     margin-bottom: 2.5em;
@@ -489,8 +465,6 @@ div.tea-brewing-container div.items-container div.img-container {
 }
 
 div.tea-brewing-container div.items-container img.long-img {
-    /* max-width: 565px; */
-    /* max-height: 370px; */
     height: 370px;
     object-fit: cover;
 }
