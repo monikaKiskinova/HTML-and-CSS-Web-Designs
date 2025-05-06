@@ -322,7 +322,47 @@ div.travel-trips div.img-carousel-container {
     gap: 1.2em;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
+
+div.travel-trips div.img-carousel-container::before {
+    content: url(images/chevron-left-solid.svg);
+    display: inline-block;
+    width: 22px;
+    padding-left: 1.3em;
+    padding-right: 5em;
+    padding-top: 5em;
+    padding-bottom: 6em;
+    background-color: var(--yellow);
+    color: black;
+    /* background: linear-gradient(90deg, white 0%, rgb(0, 0, 0) 8%, rgb(0, 0, 0) 92%, white 100%); */
+    background: linear-gradient(90deg, white 0%, rgb(255, 255, 255, 0) 100%);
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+div.travel-trips div.img-carousel-container::after {
+    content: url(images/chevron-right-solid.svg);
+    display: inline-block;
+    width: 22px;
+    padding-left: 5em;
+    padding-right: 1.3em;
+    padding-top: 5em;
+    padding-bottom: 6em;
+    background-color: var(--yellow);
+    color: black;
+    background: linear-gradient(90deg, rgb(255, 255, 255, 0) 0%, white 100%);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+div.travel-trips div.img-carousel-container:hover::before, 
+div.travel-trips div.img-carousel-container:hover::after {
+    cursor: pointer;
+}
+
 
 div.travel-trips div.img-carousel-container div.type-of-trip-container p span {
     font-weight: bold;
