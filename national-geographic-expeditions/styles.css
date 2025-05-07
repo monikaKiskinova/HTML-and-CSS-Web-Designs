@@ -11,6 +11,23 @@
 
 
 
+
+a.yellow-link {
+    border-bottom: 2px solid var(--yellow);
+
+    background: linear-gradient(#ffffff, #ffffff 50%, var(--yellow) 50%, var(--yellow));
+    background-size: 100% 200%;
+    transition: background .2s;
+}
+
+a.yellow-link:hover {
+    background-position: 100% 100%;
+}
+
+
+
+
+
 /* header */
 header div.header {
     display: flex;
@@ -46,15 +63,6 @@ header div.contact-and-search-container div p.tel {
 
 header div.contact-and-search-container div p.tel a.tel {
     padding-top: 0.2em;
-    border-bottom: 2px solid var(--yellow);
-
-    background: linear-gradient(#ffffff, #ffffff 50%, var(--yellow) 50%, var(--yellow));
-    background-size: 100% 200%;
-    transition: background .2s;
-}
-
-header div.contact-and-search-container div p.tel a.tel:hover {
-    background-position: 100% 100%;
 }
 
 header div.contact-and-search-container div p.working-hours {
@@ -305,16 +313,6 @@ div.travel-trips div.how-do-you-like-to-travel a.view-all-trips {
     letter-spacing: 3px;
     font-size: 0.85em;
     font-weight: bold;
-
-    border-bottom: 2px solid var(--yellow);
-
-    background: linear-gradient(#ffffff, #ffffff 50%, var(--yellow) 50%, var(--yellow));
-    background-size: 100% 200%;
-    transition: background .2s;
-}
-
-div.travel-trips div.how-do-you-like-to-travel a.view-all-trips:hover {
-    background-position: 100% 100%;
 }
 
 div.travel-trips div.img-carousel-container {
@@ -380,9 +378,74 @@ div.travel-trips div.img-carousel-container div.img-container {
 div.travel-trips div.img-carousel-container div.img-container img {
     height: 100%;
     object-fit: cover;
+    transition: 0.3s;
 }
 
 div.travel-trips div.img-carousel-container div.img-container img:hover {
     transform: scale(1.1);
-    transition: 0.2s;
+    transition: 0.3s;
+}
+
+
+
+
+/* experts-container styles */
+div.experts-container {
+    text-align: center; 
+    padding-top: 4.5vw;
+    padding-bottom: 6vw;
+}
+
+div.experts-container div.nat-geo-experts {
+    justify-items: center;
+    margin-bottom: 2.85em;
+}
+
+div.experts-container div.nat-geo-experts h2 {
+    text-transform: uppercase;
+    font-size: 2.85em;
+    letter-spacing: 3px;
+    padding-bottom: 0.35em;
+}
+
+div.experts-container div.nat-geo-experts p {
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 0.6px;
+    width: 95%; 
+    margin-bottom: 1em;
+}
+
+div.experts-container div.nat-geo-experts a.view-all-experts {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-top: 0.22em;
+    padding-bottom: 0.22em;
+}
+
+div.experts-container div.experts-images-container {
+    display: flex;
+    justify-content: center;
+
+}
+div.experts-container div.experts-images-container div.expert-container {
+    padding: 0 1.3em;
+}
+
+div.experts-container div.experts-images-container div.expert-container div.img-container {
+    width: 205px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin-bottom: 1.8em;
+}
+
+div.experts-container div.experts-images-container div.expert-container p.expert-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 0 .5px var(--grey);
+    margin-bottom: 0.5em;
+}
+
+div.experts-container div.experts-images-container div.expert-container p.profession {
+    font-size: 0.95em;
 }
