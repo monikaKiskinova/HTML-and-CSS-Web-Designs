@@ -6,6 +6,7 @@
     --yellow: #ffcc00;
     --grey: #959595;
     --dark-grey: #555555;
+    --grey-border-color: #333333;
 }
 
 
@@ -469,7 +470,6 @@ div.catalogue-container div.catalogue-img-container {
 div.catalogue-container div.catalogues-info-container {
     display: flex;
     flex-direction: column;
-    /* gap: 1em; */
     justify-content: center;
 }
 
@@ -488,4 +488,68 @@ div.catalogue-container div.catalogues-info-container p {
 
 div.catalogue-container div.catalogues-info-container a {
     display: inline-block;
+}
+
+
+
+
+/* footer styles */
+footer {
+    background-color: #000;
+    color: var(--background-color);
+}
+
+footer div.upper-footer-container {
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--grey-border-color);
+    margin-bottom: 1.5em;
+}
+
+footer div.upper-footer-container ul.footer-nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+footer div.upper-footer-container nav.footer-nav > ul.footer-nav-links > li.nav-links-title {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+footer div.upper-footer-container nav.footer-nav > ul.footer-nav-links > li.nav-links-title > ul {
+    padding-top: 1.5em;
+}
+
+footer div.upper-footer-container nav.footer-nav > ul.footer-nav-links > li.nav-links-title li {
+    font-size: 0.9em;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    font-weight: 100;
+    width: 18ch;
+    padding-bottom: 0.8em;
+}
+
+
+
+footer div.bottom-footer-container {
+    text-align: center;
+}
+
+footer div.bottom-footer-container ul.footer-bottom-nav-links {
+    display: flex; 
+    gap: 2em;
+    font-size: 0.75em;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+footer div.bottom-footer-container p.copyright {
+    color: var(--grey);
+    font-size: 0.8em;
+    padding-bottom: 0.9em;
+    letter-spacing: 0.3px;
 }
