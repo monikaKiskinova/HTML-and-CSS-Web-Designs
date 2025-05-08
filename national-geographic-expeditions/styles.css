@@ -2,6 +2,7 @@
 
 :root {
     --background-color: #ffffff;
+    --background-light-grey-color: #f2f2f2;
     --yellow: #ffcc00;
     --grey: #959595;
     --dark-grey: #555555;
@@ -448,4 +449,43 @@ div.experts-container div.experts-images-container div.expert-container p.expert
 
 div.experts-container div.experts-images-container div.expert-container p.profession {
     font-size: 0.95em;
+}
+
+
+
+
+/* catalogue-container styles */
+div.catalogue-container {
+    background-color: var(--background-light-grey-color);
+    display: flex;
+    padding: 7em 2em 6.5em 6.75em;
+    gap: 1.4em;
+}
+
+div.catalogue-container div.catalogue-img-container {
+    max-width: 450px; 
+}
+
+div.catalogue-container div.catalogues-info-container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+    justify-content: center;
+}
+
+div.catalogue-container div.catalogues-info-container h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 0.35em;
+}
+
+div.catalogue-container div.catalogues-info-container p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    max-width: 65ch;
+    letter-spacing: .5px;
+}
+
+div.catalogue-container div.catalogues-info-container a {
+    display: inline-block;
 }
