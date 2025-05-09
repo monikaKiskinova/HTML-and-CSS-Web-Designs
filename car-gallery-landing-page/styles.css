@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 
 :root {
-    --lightgrey: #f6f8fb;
+    --lightgrey: #e8e8e8;
     --grey-btn-border: #d2d6da;
 }
 
@@ -121,6 +121,180 @@ nav ul li a.active {
 }
 .see-all-cars-btn {
     display: inline-block;
-    border: 3px solid #f9d8cd;
+    border: 3px solid rgba(249, 216, 205, 0.9);
     font-size: 2em;
+    font-weight: 600;
+}
+
+
+
+
+/* main images container styles*/
+.images-container {
+    background: var(--lightgrey);
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    border-top: 1px solid var(--lightgrey);
+    border-bottom: 1px solid var(--lightgrey);
+}
+.images-container img {
+    width: calc(((100% - 24rem ) - 3em) / 2);
+    height: auto;
+}
+
+
+
+
+/* main articles container styles*/
+.articles-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+div.article {
+    width: calc(((100% - 24rem ) - 3em) / 2);
+    display: flex;
+    flex-direction: column;
+}
+article {
+    padding-top: 4rem;
+    padding-bottom: 3.5rem;
+    
+}
+.articles-container * {
+    color: #54565b;
+
+}
+.article p,
+.article .btn {
+    font-size: 18px;
+}
+article h2 {
+    font-size: 2.6em;
+    font-weight: 300;
+    padding-bottom: 0.8em;
+}
+article p {
+    opacity: 0.6;
+    font-weight: 400;
+}
+.article .btn {
+    border: 1px solid rgba(98, 105, 107, 0.5);
+    opacity: 0.7; 
+    align-self: center;
+    padding-top: 0.85em;
+    padding-bottom: 1em;
+}
+
+
+
+
+
+
+/* main middle section styles*/
+.middle-section {
+    background-image: url(./images/promo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+}
+.singin-container {
+    display: flex;
+    flex: 0 0 63%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em 3.5em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5em; 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.singin-container p {
+    color: white;
+    font-size: 2.3em;
+    font-weight: 100;
+    font-stretch: expanded;
+}
+.singin-container .btn {
+    border-radius: 0.3em;
+    background-color: white;
+    color: #356d83;
+    font-size: 1.65em;
+    font-weight: 300;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+
+
+
+.gallery-section {
+    text-align: center;
+}
+.gallery-section h2 {
+    font-size: 2.7em;
+    font-weight: 100;
+    padding-bottom: 1.5em;
+    color: #52575c;
+}
+.gallery-section .btn-container {
+    margin-bottom: 2.5em;
+}
+.gallery-section .btn {
+    border: 1px solid rgba(100, 105, 110, 0.4);
+    border-radius: 0.3em;
+    color: #52575c;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 1.1em 2.2em;
+}
+
+
+.gallery-section .images-container {
+    margin-bottom: 5em;
+    border-top-width: 1px;
+}
+.gallery-section .images-container img {
+    width: calc(((100% - 24rem ) - 6em) / 3);
+}
+
+
+
+
+
+
+footer {
+    background: var(--lightgrey);
+    text-align: center;
+    border-top: 2px solid var(--grey-btn-border);
+}
+footer p:not(.all-rights-reserved) {
+    color: #f25858; 
+    font-size: 2em;
+    font-weight: 100;
+}
+footer h3 {
+    font-size: 2.7em;
+    font-weight: 100;
+    padding-bottom: 0.5em;
+    color: #64696e;
+}
+.footer-top-section {
+    padding-bottom: 10.5em;
+    width: 80%;
+    border-bottom: 1px solid var(--grey-btn-border);
+    margin: 0 auto;
+}
+
+div.all-rights-reserved {
+    padding-top: 5.5em;
+    padding-bottom: 1.3em;
+}
+.all-rights-reserved {
+    font-size: 18px;
+    font-weight: 100;
+    color: #64696e;
+    opacity: 0.8;
 }
