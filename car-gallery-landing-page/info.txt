@@ -1,0 +1,1 @@
+This is a design from SoftUni's HTML & CSS course - the final exam task
