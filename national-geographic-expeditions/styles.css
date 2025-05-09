@@ -14,6 +14,7 @@
 
 
 
+/* buttons and links color effects */
 a.yellow-link {
     border-bottom: 2px solid var(--yellow);
 
@@ -25,6 +26,30 @@ a.yellow-link {
 a.yellow-link:hover {
     background-position: 100% 100%;
 }
+
+
+.black-btn {
+    background: linear-gradient(to right, black 50%, var(--yellow) 50%);
+}
+.white-btn {
+    background: linear-gradient(to right, white 50%, var(--yellow) 50%);
+}
+.black-btn, 
+.white-btn {
+    /* background: linear-gradient(to right, black 50%, var(--yellow) 50%); */
+    background-size: 201% 100%;
+    background-position: right bottom;
+    transition: all .3s;
+    border: none;
+}
+.black-btn:hover, 
+.white-btn:hover {
+    background-position: left bottom;
+}
+.black-btn:hover {
+    color: var(--background-color);
+}
+
 
 
 
@@ -76,17 +101,28 @@ header div.contact-and-search-container div.search-and-reserve-container form {
 }
 
 header div.contact-and-search-container div.search-and-reserve-container form label {
-    opacity: 0.6;
-    font-size: 0.9em;
-    position: absolute;
-    top: 25%;
-    left: 8%;
+    /* opacity: 0.6; */
+    /* font-size: 0.9em; */
+    /* position: absolute; */
+    /* top: 25%; */
+    /* left: 8%; */
+    display: none;
 }
 
 header div.contact-and-search-container div.search-and-reserve-container form input {
     width: 175px;
     padding: 0.55em;
     border: 1px solid var(--grey);
+}
+
+header div.contact-and-search-container div.search-and-reserve-container form input::placeholder {
+    font-size: 0.9em;
+    padding: 0.25em;
+}
+
+header div.contact-and-search-container div.search-and-reserve-container form input:hover {
+    border-color: var(--dark-grey);
+    cursor: auto;
 }
 
 header div.contact-and-search-container div.search-and-reserve-container form button {
@@ -112,7 +148,8 @@ header nav {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 0.8em;
-    padding: 1.5em 3em;
+    padding: .5em 3em .4em 3em;
+    height: 4.4em;
 }
 
 header nav ul {
@@ -120,16 +157,43 @@ header nav ul {
     justify-content: space-between;
 }
 
+header nav > ul > li {
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+}
+
+header nav > ul > li:hover {
+    border-bottom: 5px solid var(--yellow);
+    cursor: pointer;
+}
+
+header nav ul > li > ul {
+    display: none;
+} 
+
+/* header nav ul > li:hover > ul {
+    display: block;
+} */
+
+
 
 
 
 /* feature-container styles */
 div.feature-container {
-    background-image: url(images/feature-image-homepage-waterfall.jpg);
-    background-position: center;
-    background-size: contain;
+    /* background-image: url(images/feature-image-homepage-waterfall.jpg); */
+    /* background-position: center; */
+    /* background-size: contain; */
     color: var(--background-color);
     text-align: center;
+    position: relative;
+}
+
+div.feature-container a.feature-img-link {
+    position: absolute;
+    top: 0;
+    object-position: center;
+    z-index: -1;
 }
 
 div.feature-container h1,
@@ -218,19 +282,8 @@ div.feature-container div.find-your-next-trip-container form button.btn {
     display: inline-block;
     padding-left: 4.5vw;
     padding-right: 4.5vw;
-
-    background-image: linear-gradient(black, black);
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background .5s;
 }
 
-div.feature-container div.find-your-next-trip-container form button.btn:hover {
-    background-size: 100% 100%;
-
-    color: var(--background-color);
-    outline: .1px solid var(--yellow);
-}
 
 
 
@@ -241,12 +294,16 @@ div.offer-learn-more-container {
     padding: 5.5vw 17.5vw;
     display: flex;
     flex-direction: column;
-    row-gap: 4vw;
+    row-gap: 2vw;
 }
 
 div.offer-learn-more-container div.article-container {
     display: flex;
     gap: 2.6vw;
+}
+
+div.offer-learn-more-container a.article-container-link *:not(a.btn):hover h4 {
+    color: var(--dark-grey);
 }
 
 div.offer-learn-more-container div.article-container2 {
@@ -532,6 +589,10 @@ footer div.upper-footer-container nav.footer-nav > ul.footer-nav-links > li.nav-
     padding-bottom: 0.8em;
 }
 
+footer div.upper-footer-container nav.footer-nav > ul.footer-nav-links > li.nav-links-title li:hover {
+    text-decoration: underline;
+}
+
 
 
 footer div.bottom-footer-container {
@@ -545,6 +606,11 @@ footer div.bottom-footer-container ul.footer-bottom-nav-links {
     justify-content: center;
     padding-top: 2em;
     padding-bottom: 2em;
+}
+
+
+footer div.bottom-footer-container ul.footer-bottom-nav-links li a:hover {
+    border-bottom: 1px solid var(--background-color);
 }
 
 footer div.bottom-footer-container p.copyright {
