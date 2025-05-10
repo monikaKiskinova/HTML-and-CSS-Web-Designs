@@ -145,11 +145,12 @@ header div.contact-and-search-container div.search-and-reserve-container a.btn.r
 header nav {
     background: #000;
     color: var(--background-color);
-    text-transform: uppercase;
+    /* text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 0.8em;
+    font-size: 0.8em; */
     padding: .5em 3em .4em 3em;
-    height: 4.4em;
+    height: 3.6em;
+    position: relative;
 }
 
 header nav ul {
@@ -157,24 +158,72 @@ header nav ul {
     justify-content: space-between;
 }
 
-header nav > ul > li {
+header nav > ul > li.main-link {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8em;
     padding-top: 1em;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.75em;
 }
 
-header nav > ul > li:hover {
+header nav > ul > li.main-link:hover {
     border-bottom: 5px solid var(--yellow);
     cursor: pointer;
 }
 
-header nav ul > li > ul {
+header nav ul > li.main-link ul {
     display: none;
 } 
 
-/* header nav ul > li:hover > ul {
+header nav ul > li.main-link:hover > ul {
     display: block;
-} */
+    background-color: var(--background-color);
+    color: #000;
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    z-index: 2; 
+    padding: 2em 5em .5em 5em;
+    columns: 4;
+}
 
+header nav ul > li.main-link:hover ul.two-cols {
+    /* columns: 2; */
+    /* column-fill: unset; */
+    display: flex;
+    justify-content: flex-start;
+    gap: 40%;
+}
+header nav ul > li.main-link:hover ul.two-cols > li {
+    text-transform: capitalize;
+    font-size: 1.05rem;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+header nav ul > li.main-link:hover ul.two-cols ul {
+    display: block;
+}
+
+header nav ul > li.main-link:hover ul.two-cols ul.inner-list li {
+    padding-top: 1.65em;
+    font-size: 0.93rem;
+}
+
+header nav ul > li.main-link > ul.inner-list li {
+    text-transform: initial;
+    font-size: 0.93rem;
+    font-weight: 900;
+    letter-spacing: normal;
+    padding-bottom: 1.8em;
+}
+
+header nav ul > li.main-link ul.inner-list li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-decoration-color: var(--yellow);
+    text-underline-offset: 0.3em;
+}
 
 
 
