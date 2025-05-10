@@ -43,15 +43,15 @@ ol {
     list-style-type: none;
 }
 
-img {
-    max-width: 100%;
-}
-
 .img-container {
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+img {
+    max-width: 100%;
 }
 
 a {

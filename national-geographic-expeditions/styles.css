@@ -59,7 +59,16 @@ a.yellow-link:hover {
 header div.header {
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 3em 1em 3em;
+    /* padding: 1.5em 3em 1em 3em; */
+    padding: 1.5vw 2.5vw;
+}
+
+header div.header div.logo-container {
+    max-width: 250px; 
+}
+
+header div.header div.logo-container a img {
+    max-width: 100%;
 }
 
 header div.header button {
@@ -138,6 +147,15 @@ header div.contact-and-search-container div.search-and-reserve-container a.btn.r
     /* padding-left: 0.5em 4em 0.8em 6em; */
     padding: 0.3em 3.5em 0.4em 6em;
     text-align: right;
+}
+
+
+header div.menu {
+    display: none;
+}
+
+header div.reserve-and-tel-container {
+    display: none;
 }
 
 
@@ -230,9 +248,10 @@ header nav ul > li.main-link ul.inner-list li:hover {
 
 /* feature-container styles */
 div.feature-container {
-    /* background-image: url(images/feature-image-homepage-waterfall.jpg); */
-    /* background-position: center; */
-    /* background-size: contain; */
+    background-image: url(images/feature-image-homepage-waterfall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--background-color);
     text-align: center;
     position: relative;
@@ -253,6 +272,7 @@ div.feature-container p {
 div.feature-container div.feature-header {
     padding: 8vw 12vw;
     padding-bottom: 13.5vw;
+    /* padding-bottom: 28vh; */
 }
 
 div.feature-container div.feature-header h1 {
@@ -300,13 +320,20 @@ div.feature-container div.find-your-next-trip-container form select {
     font-size: 1em;
     padding: 0.8em 1.5em;
     appearance: none;
-    max-width: 300px;
     width: 300px;
+    width: 19.6vw;
+    /* max-width: 300px; */
 }
+
+div.feature-container div.find-your-next-trip-container form select, 
+div.feature-container div.find-your-next-trip-container form button {
+    height: 45px;
+}
+
 
 div.feature-container div.find-your-next-trip-container form select[name="trip-type"],
 div.feature-container div.find-your-next-trip-container form select[name="departure-month"] {
-    margin-left: 45px;
+    margin-left: 44px;
 }
 
 div.feature-container div.find-your-next-trip-container form select:focus {
@@ -340,7 +367,8 @@ div.feature-container div.find-your-next-trip-container form button.btn {
 /* offer-learn-more-container styles*/
 div.offer-learn-more-container {
     background-color: #000;
-    padding: 5.5vw 17.5vw;
+    /* padding: 5.5vw 17.5vw; */
+    padding: 3.5vw 17.5vw 5.5vw 17.5vw;
     display: flex;
     flex-direction: column;
     row-gap: 2vw;
@@ -540,8 +568,12 @@ div.experts-container div.experts-images-container div.expert-container {
     padding: 0 1.3em;
 }
 
+div.experts-container div.experts-images-container div.expert-container a {
+    max-width: calc(100% - 13em) / 5;
+}
+
 div.experts-container div.experts-images-container div.expert-container div.img-container {
-    width: 205px;
+    max-width: 205px;
     border-radius: 50%;
     aspect-ratio: 1/1;
     margin-bottom: 1.8em;
@@ -565,7 +597,8 @@ div.experts-container div.experts-images-container div.expert-container p.profes
 div.catalogue-container {
     background-color: var(--background-light-grey-color);
     display: flex;
-    padding: 7em 2em 6.5em 6.75em;
+    /* padding: 7em 2em 6.5em 6.75em; */
+    padding: 7vw 6.75vw 6.5vw 6.75vw;
     gap: 1.4em;
 }
 
@@ -610,6 +643,11 @@ footer div.upper-footer-container {
     padding-bottom: 1.5em;
     border-bottom: 1px solid var(--grey-border-color);
     margin-bottom: 1.5em;
+}
+
+footer div.upper-footer-container div.show-less-links,
+footer div.upper-footer-container div.show-more-links {
+    display: none;
 }
 
 footer div.upper-footer-container ul.footer-nav-links {
@@ -667,4 +705,152 @@ footer div.bottom-footer-container p.copyright {
     font-size: 0.8em;
     padding-bottom: 0.9em;
     letter-spacing: 0.3px;
+}
+
+
+
+
+
+
+@media (max-width: 1120px) {
+    header {
+        height: 65px;
+    }
+    header div.header{
+        padding: 0.85vw 1.8vw 0 1.8vw;
+    }
+
+    header div.header div.logo-container, 
+    header div.header div.logo-container img {
+        width: 145px;
+    }
+
+    header div.contact-and-search-container div.phone-and-hours, 
+    header div.contact-and-search-container div.search-and-reserve-container, 
+    header nav.header-nav {
+        display: none;
+    }
+
+
+    header div.menu {
+        display: flex;
+        align-items: center;
+        gap: 0.8em;
+    }
+    
+    header div.menu p {
+        font-size: 0.85em;
+        font-weight: bold;
+    }
+
+    header div.menu span {
+        padding-top: 0.5em;
+    }
+
+
+    header div.reserve-and-tel-container {
+        display: flex; 
+        background-color: var(--yellow);
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        font-size: 0.8em;
+        justify-content: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        z-index: 1;
+    }
+    header div.reserve-and-tel-container p.reserve {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    header div.reserve-and-tel-container p.tel {
+        font-weight: 100;
+        border-left: 2px solid black;
+    }
+    header div.reserve-and-tel-container p.reserve, 
+    header div.reserve-and-tel-container p.tel {
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+    }
+
+
+
+    div.offer-learn-more-container h4 {
+        font-size: 1.7em;
+        line-height: 1.1;
+    }
+    div.offer-learn-more-container p {
+        font-size: 0.95em;
+    }
+    div.offer-learn-more-container div.article-container div.info-container {
+        max-width: calc((100% - 2vw) / 3.15);
+    }
+
+
+
+    div.catalogue-container {
+        padding: 3em 2em 3.5em 3em;
+    }
+    div.catalogue-container div.catalogue-img-container {
+        max-width: 250px; 
+    }
+
+
+    footer {
+        padding-bottom: 5em;   /* so that the yellow reserve-and-tel menu doesn't hide the bottom part of the footer*/
+    }
+
+    footer div.upper-footer-container nav.footer-nav {
+        border: 1px solid var(--background-color);
+        border-radius: 0.2em;
+        margin: 2em 1em 3em 1em;
+    }
+    footer div.upper-footer-container nav.footer-nav div.show-less-links {
+        display: block;
+    }
+    footer div.upper-footer-container nav.footer-nav div.show-less-links:hover {
+        cursor: pointer;
+    }
+        
+    footer div.upper-footer-container nav.footer-nav div {
+        text-transform: uppercase;
+        font-size: 0.9em;
+        font-weight: bold;
+        padding: 1.25em;
+        border-bottom: 1px solid var(--background-color);
+    }
+    footer div.upper-footer-container nav.footer-nav div img {
+        vertical-align: middle;
+    }
+    footer div.upper-footer-container nav.footer-nav div.show-more-links img {
+        transform: rotate(180deg);
+    }
+    footer div.upper-footer-container nav.footer-nav div.show-less-links span, 
+    footer div.upper-footer-container nav.footer-nav div.show-more-links span {
+        padding-left: 0.8em;
+    }
+    
+    footer div.upper-footer-container ul.footer-nav-links {
+        /* justify-content: center; */
+        flex-direction: column;
+        gap: 1em;
+        padding: 1.75em 1.25em;
+        padding-bottom: .8em;
+    }
+    footer div.upper-footer-container nav.footer-nav > ul.footer-nav-links > li.nav-links-title {
+        font-size: 0.85em;
+        padding-bottom: 0.6em;
+    }
+    footer div.upper-footer-container nav.footer-nav > ul.footer-nav-links > li.nav-links-title > ul {
+        padding-top: 1em;
+    }
+    footer div.upper-footer-container nav.footer-nav > ul.footer-nav-links > li.nav-links-title li {
+        font-size: 0.9em;
+        width: fit-content;
+        padding-bottom: 0.6em;
+    }
+    
 }
